@@ -10,7 +10,7 @@ HEADERS = {'X-Auth-Token': TEAM_TOKEN}
 
 
 def scan_map() -> Dict:
-    """ Смотрим карту """
+    """ Смотрим карту и получаем инфу о планетах """
 
     url = f'{BASE_URL}/player/universe'
 
@@ -21,7 +21,7 @@ def scan_map() -> Dict:
 
 
 def travel(payload) -> Dict:
-    """ Перемещение и выгрузка мусора """
+    """ Перемещение к планете и получение инфы о мусоре на ней """
 
     url = f'{BASE_URL}/player/travel'
 
